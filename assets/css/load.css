@@ -1,0 +1,108 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+  }
+  
+  .linkcol {
+    float: left;
+    width: 33.3%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  #bg {
+      overflow: hidden;
+      height: 80vh;
+      width: 80vh;
+      background: url(https://i.imgur.com/hrHVn5Q.jpg) 50%/ cover
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  
+  .box{
+    margin:100px 0; 
+  }
+  
+  
+  .wrapper, html, body {
+      height: 98%;
+  }
+  
+  .left, .right {
+    float:left;
+    width: 20%;
+    max-height:100%;
+    font-size: 20px;
+  }
+  
+  .middle {
+    float:left; 
+    width: 60%;
+    max-height:100%;
+    overflow: scroll;
+  }
+  
+  h1 {
+      color: white;
+      mix-blend-mode: difference;
+      font: 85 15vmin/15vh cookie;
+      text-align: center
+  }
+  
+  h2 {
+    margin:50px 0;
+  }
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: solid;
+    border-color:black;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border-color:black;
+    border: solid; 
+    cursor: pointer; 
+  }
+
+  .gallery{
+    size: 50%;
+  }

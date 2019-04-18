@@ -1,0 +1,189 @@
+html {
+  width: 100%;
+}
+
+body {
+  min-width: 100%;
+}
+
+* {
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  
+}
+
+.photo  {
+  max-width: 100%;
+  max-height: 100%;  
+  position: absolute;
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  }
+
+
+a.activeMenuItem {
+  background-color: #F00;
+  font-weight: bold;
+}
+
+.linkcol {
+  float: left;
+  width: 33.3%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#bg {
+	overflow: hidden;
+	height: 100vh;
+}
+
+.show{
+  display: none; 
+}
+
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color:black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  background: black;
+  color: white; 
+  text-decoration: underline;
+}
+
+.box{
+  margin:100px 0; 
+}
+
+
+.wrapper, html, body {
+    height: 98%;
+}
+
+.left, .right {
+  width: 23%;
+  max-height:100%;
+  font-size: 20px;
+}
+
+.left {
+  float: left;
+  padding-left: 10px;
+}
+
+.middle {
+  float:left; 
+  width: 54%;
+  max-height:100%;
+  overflow: scroll;
+}
+
+.right{
+  float: right; 
+  padding: 40px 0 0 50px; 
+}
+
+
+
+h1 {
+  color: black;
+  display:absolute; 
+	mix-blend-mode: difference;
+  font: 85 12vmin/12vh cookie;
+  z-index: 10;
+
+ 
+}
+
+h2 {
+  margin:50px 0;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: solid;
+  border-color:black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: black;
+  border-color:black;
+  border: solid; 
+  cursor: pointer; 
+}
+
+input[name=message]{
+  height:100px;
+}
+
+#gallery {
+  position: absolute;
+  width: 80%;
+  height: 80%;  
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index: -100;
+}
+
+.insert{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate (-50%, -50%);
+  z-index: 100;
+  /* color: black; 
+  mix-blend-mode: difference;
+  font: 85 12vmin/12vh cookie; */
+}
+
+.hide{
+  position: relative; 
+}
+
+#icons {
+  font-size:20pt;
+  margin-top:-50px; 
+  color: lightgray; 
+}
