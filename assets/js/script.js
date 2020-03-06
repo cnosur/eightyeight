@@ -9,30 +9,20 @@ $(document).ready(function(){
 $(document).click(function (event) { 
     $('.hide').fadeOut();           
     $('.show').show("slow");  
-    $('.scroll-button').on('click', function (event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, main').animate({
-                scrollTop: $(hash).offset().top
-            }, 1500, function () {
-                window.location.hash = hash;
-            });
-        }
-    });
+
 });
 
 (function makeDiv(){
     var divsize = ((Math.random()*100) + 50).toFixed();
-    $newdiv = $('<div class=insert>LEONARDO SILVA</div>').css({
+    $newdiv = $('<div class=insert>GALLERY EIGHTYEIGHT</div>').css({
         'color': 'black',
-        'mix-blend-mode': 'difference',
-        'font': '85 12vmin/12vh cookie',
+        'font': 'Courier-new',
+        'font-size': '10vh',
         'position': 'absolute',
     });
     
-    var posx = (Math.random() * ($(document).width() - (divsize * 15))).toFixed();
-    var posy = (Math.random() * ($(document).height() - (divsize * 15))).toFixed();
+    var posx = (Math.random() * ($(document).width() - (divsize * 25))).toFixed();
+    var posy = (Math.random() * ($(document).height() - (divsize * 25))).toFixed();
     
     $newdiv.css({
         'position':'absolute',
@@ -43,5 +33,27 @@ $(document).click(function (event) {
 })();
 
 
+var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
 
+//An image to overlay
+$overlay.append($image);
 
+//Add overlay
+$("body").append($overlay);
+
+  //click the image and a scaled version of the full size image will appear
+  $("#photolist a").click( function(event) {
+    event.preventDefault();
+    var imageLocation = $(this).attr("href");
+
+    //update overlay with the image linked in the link
+    $image.attr("src", imageLocation);
+
+    //show the overlay
+    $overlay.show();
+  } );
+
+  $("#overlay").click(function() {
+    $( "#overlay" ).hide();
+  });

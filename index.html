@@ -1,119 +1,370 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="shortcut icon" type="image/ico" href="assets/images/favicon2.ico"/>
-    
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-    <title>Leonardo Silva | Developer</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="shortcut icon" type="image/ico" href="assets/images/favicon2.ico" />
+
+  <title>Gallery EIGHTYEIGHT | Contemporary Photography</title>
 </head>
+
 <body>
 
+  <div class="wrapper">
 
-<div class="wrapper" id="bg">
-    <!-- Array of 5-10 B/W photos -->  
-    <!-- Displayed on page load -->
-    
-    <div class="left show" id="logo">
-         <!-- Full.Ver loaded on page- Minimize.Ver on main div show -->
-    <h1>LEO SILVA</h1>
-
-    <div id="icons"><i class="devicon-mongodb-plain"></i><i class="devicon-express-original"></i><i class="devicon-react-original"></i><i class="devicon-nodejs-plain"><i class="devicon-jquery-plain"></i></i></div>
+    <!-- POP UP DIV ON LOAD OF PAGE -->
+    <div class="hide" id="gallery">
+      <img class="photo" id="img-gallery" src="" alt="">
+      <div class="insert"></div>
     </div>
-    <!-- Full.Ver loaded on page- Minimize.Ver on main div show -->
+
+    <!-- LEFT COLUMN W/ TITLE AND SUBTITLE -->
+    <div id="title" class="left show">
+      <h1>EIGHTY EIGHT</h1>
+
+      <div id="subtitle">
+        <h3>Contemporary Photography</h3>
+      </div>
+    </div>
 
 
-
-
-
-<div class="hide" id="gallery">
-  <img class="photo" id="img-gallery" src="" alt="">
-  <div class="insert"></div>
-  <!-- <div class="test">TEST</div> -->
-
-</div>    
-
+    <!-- MIDDLE COLUMN W/ QUOTE, PHOTO GALLERY, ABOUT, CONTACT -->
 
     <div class="middle show" id="main">
-        <!-- Show on click in body -->
-        <!-- Load to news div -->
+      <div id="about">
+        <h2>ABOUT</h2>
 
-        <div id="imgNames"></div>
+        <div class="box">
 
-        
-        <div class="box" id="updates">
-        <!-- Lists 10 most recent news updates -->
-        <h2>UPDATES</h2> 
+          <p>Gallery EightyEight is currently showing the the contemporary photography of artist CNOSUR.</p>
 
-        <p>APR 2019: PORTFOLIO DEPLOYED</p>
-        <p>The blurry world that is development has started to come into focus for me. Although I care greatly for athestics and visual stimuli, I've gravitated heavily toward backend development. Feels great to find my place.</p>
-        
-        <p>MAR 2019: ONE STOP IN BETA</p>
-        <p>Ut vestibulum dictum nisi, sit amet luctus nisi imperdiet nec. Suspendisse potenti. In commodo ac sapien id semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam lacinia vitae mauris ac sodales. Sed a purus erat. Cras eu dui quis odio egestas blandit vel eu ipsum. Phasellus erat dui, iaculis ut justo in, tincidunt rhoncus sem. Sed interdum risus diam, non imperdiet nisi aliquet nec. Sed nibh urna, euismod in mauris finibus, aliquam porta quam. Morbi tempor rhoncus mi vitae hendrerit. Nullam quis convallis tellus, eu tempor metus. Curabitur vel risus vel dui gravida ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas aliquet molestie lectus, a elementum neque suscipit ut. Maecenas et leo vitae felis sagittis sagittis eu sed arcu.</p>
-        
-        <p>DEC 2018: THE UNIVERSITY OF DENVER WELCOMES YOU</p>
-        <p>Curabitur iaculis consequat bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean aliquet, justo eget fringilla dictum, tortor nibh mollis turpis, vitae pharetra erat est sit amet urna. Praesent sapien sapien, pharetra eu lobortis et, sagittis et nulla. Nullam mattis, massa et convallis placerat, ex lectus gravida elit, in venenatis eros justo sit amet leo. Maecenas eget dictum orci, nec mollis risus. Nulla et ex metus.</p>
-
-        <p>NOV 2018: FIRST ASCENT</p>
-        <p>Curabitur urna nibh, dictum sit amet elit ut, dictum rhoncus tellus. In interdum molestie placerat. Suspendisse elit mauris, mattis nec nunc nec, sagittis tristique lectus. Sed tortor erat, imperdiet id hendrerit non, hendrerit id ex. Aliquam in leo sem. Nulla dapibus tempus dui sit amet imperdiet. Vivamus sit amet tellus dui.</p>
-        
-        <p>AUG 2018: I LEFT MY HEART IN SAN FRANCISCO... AND MY COUCH IN SAN DIEGO</p>
-        <p>Sed ut tortor in odio sagittis elementum sit amet id ligula. Sed id arcu gravida, ullamcorper metus at, cursus lectus. Duis blandit lacus nisi, ac ultricies augue mattis mollis. Donec posuere pulvinar turpis, nec egestas elit convallis vitae. Fusce elementum neque tortor, pretium lobortis lacus efficitur eu. Ut non hendrerit nulla, vitae condimentum dui. Nulla pulvinar est ut nunc interdum, in gravida metus pulvinar. Donec ipsum metus, tempus a neque quis, vulputate ultricies nisi. Ut facilisis finibus rhoncus. Praesent fermentum nisl id aliquam dapibus.</p>
-        
-      </div>
-        
-
-        <div class="box" id="about">
-            <h2>ABOUT</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae egestas dui, vitae pulvinar ex. Praesent in blandit sem, sit amet sollicitudin felis. Fusce vulputate vel velit ac vulputate. Morbi et tincidunt tortor. Integer a pharetra nulla. Nunc at venenatis odio. Pellentesque ut neque sit amet erat tincidunt gravida. Sed eget libero quis tortor sodales rhoncus. Aliquam ac faucibus ipsum, ut luctus ipsum. Phasellus eget accumsan orci. Nulla mauris magna, rhoncus eu efficitur et, pharetra et justo. Quisque imperdiet eros ac nisi accumsan, eu ultrices nibh interdum. Phasellus commodo, felis nec tristique tempus, augue lorem pretium justo, vitae facilisis purus turpis sed lectus. Duis eu ornare justo.</p>
-
-            <p>Sed viverra ante vel iaculis molestie. Nunc pellentesque, sem sit amet congue molestie, odio sem dignissim metus, ac ultrices nisi magna ac magna. Aliquam accumsan sollicitudin magna nec finibus. Mauris id orci vitae risus congue condimentum eget non nunc. Suspendisse mollis odio ac ipsum aliquet, id rhoncus nisl pellentesque. Sed dignissim nisi ac dignissim consequat. Aenean placerat ultrices magna.</p>
-              
-            <p>Pellentesque tortor libero, vehicula facilisis semper id, sagittis ac ipsum. Aliquam luctus odio vitae lacus sodales iaculis. Phasellus sit amet porta ex, quis aliquet urna. Nam placerat quis odio id tempus. Phasellus est risus, rhoncus in lacus sit amet, dapibus fringilla massa. Cras in tortor tortor. Donec vulputate venenatis nulla, a auctor odio accumsan ac. Praesent porttitor metus pulvinar, semper odio at, gravida lectus. Fusce vel odio ante. Mauris aliquam, quam mollis finibus aliquet, sapien elit scelerisque risus, quis volutpat ex diam quis dolor.</p>
-
+          <p>Photographs were taken in across the United States between 2016-2019.</p>
+          <br>
+          <br>
+          <p><strong>“Each tile is curved and has an attractive rough texture. The colour varies from bright vermilion
+              to
+              dull Venetian red. They have the patina of almost two centuries of English sunshine and rain and are
+              patterned with mosses in a wide range of emerald, apple and viridian greens. Any one of them, tastefully
+              framed and hung in a London art gallery, would get rave notices from the critics.”</strong></p>
+          <br>
+          <p id="by">― Norman Thelwell, A Plank Bridge by a Pool</p>
         </div>
-
-    
-
-        <div class="box" id="portfolio"></div>
-        <!-- Link to all deployed projects -->
-        <h2>PORTFOLIO</h2>
-
-        <h4>The Psychic Game</h4>
-        <a href="https://cnosur.github.io/Psychic-Game/">Click Here to Play!</a>
-
-        <h4>Crystal Collector</h4>
-        <a href="https://cnosur.github.io/unit-4-game/">Click Here to Play!</a>
-
-        <h4>NPR Quiz</h4>
-        <a href="https://cnosur.github.io/TriviaGame/">Click Here to Play!</a>
-
-        <h4>Giftastic</h4>
-        <a href="https://cnosur.github.io/giftastic/">Click Here to Play!</a>
-          
-        <h4>Train Depot</h4>
-        <a href="https://cnosur.github.io/traintime/">Click Here to Play!</a>
-        <!-- ALL THINGS CONSIDERED - An NPR Quiz Game 
-
-        ONE STOP - Proximity Mapping  
-
-        GHOST RIVER WINERY - In The Pursuit of Excellence 
-        
-        LEX - Custom Light DMX
-    
-        MAP 52 - A digital interpretation of "Jerry's Map" -->
+      </div>
 
 
-        
-        <div class="box" id="contact">
+      <div class="photo-gallery" id="photos">
+        <h2>ON DISPLAY </h2>
+        <ul class="photo-gallery clearfix" id="photolist">
+          <div><a href="https://i.imgur.com/jR01vZj.jpg">
+              <img alt="Tio Leo - SAN DIEGO" src="https://i.imgur.com/jR01vZj.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/ZVnFxrZ.jpg">
+              <img alt="Tower 26 - SAN DIEGO" src="https://i.imgur.com/ZVnFxrZ.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/dsFQ2bu.jpg">
+              <img alt="The Pacific - WASHINGTON DC" src="https://i.imgur.com/dsFQ2bu.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/jyjhKfD.jpg">
+              <img alt="Memorial - WASHINGTON DC" src="https://i.imgur.com/jyjhKfD.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/4xuDJEP.jpg">
+              <img alt="'Hahn/Cock' - WASHINGTON DC" src="https://i.imgur.com/4xuDJEP.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/HNao4AX.jpg">
+              <img alt="Passageway - WASHINGTON DC" src="https://i.imgur.com/HNao4AX.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/1J8ufZ2.jpg">
+              <img alt="Circle Art - WASHINGTON DC" src="https://i.imgur.com/1J8ufZ2.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/Nq5sLAi.jpg">
+              <img alt="Light Projection Art - WASHINGTON DC" src="https://i.imgur.com/Nq5sLAi.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/2qb8qEn.jpg">
+              <img alt="Ai Weiwei Pattern - WASHINGTON DC" src="https://i.imgur.com/2qb8qEn.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/ckzeIuu.jpg">
+              <img alt="'Still Life with Spirit and Xitle' - WASHINGTON DC" src="https://i.imgur.com/ckzeIuu.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/WHRFGdQ.jpg">
+              <img alt="National Gallery Stairwell - WASHINGTON DC" src="https://i.imgur.com/WHRFGdQ.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/yzAAoj1.jpg">
+              <img alt="LJ Skylight - SAN DIEGO" src="https://i.imgur.com/yzAAoj1.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/krdQMAc.jpg">
+              <img alt="Crown Point Sky - SAN DIEGO" src="https://i.imgur.com/krdQMAc.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/nQPUJI4.jpg">
+              <img alt="Garnet Plaza Bricks - SAN DIEGO" src="https://i.imgur.com/nQPUJI4.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/XXx4Ohp.jpg">
+              <img alt="Crack - SAN FRANCISCO" src="https://i.imgur.com/XXx4Ohp.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/xfdYj3j.jpg">
+              <img alt="Art - SAN DIEGO" src="https://i.imgur.com/xfdYj3j.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/lkDKUt2.jpg">
+              <img alt="Coronado Wine - SAN DIEGO" src="https://i.imgur.com/lkDKUt2.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/6XDqEOJ.jpg">
+              <img alt="Art - SAN DIEGO" src="https://i.imgur.com/6XDqEOJ.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/Uq0nm3h.jpg">
+              <img alt="Bricks - SACRAMENTO" src="https://i.imgur.com/Uq0nm3h.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/fcRUXPu.jpg">
+              <img alt="Monet - SAN DIEGO" src="https://i.imgur.com/fcRUXPu.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/fl57016.jpg">
+              <img alt="Ferrari - SAN DIEGO" src="https://i.imgur.com/fl57016.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/xfwTrmh.jpg">
+              <img alt="Garnet Alley - SAN DIEGO" src="https://i.imgur.com/xfwTrmh.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/5rAgcAH.jpg">
+              <img alt="Dog Paws - SAN DIEGO" src="https://i.imgur.com/5rAgcAH.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/wjjAMSQ.jpg">
+              <img alt="Night Light - SAN DIEGO" src="https://i.imgur.com/wjjAMSQ.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/IgnEAt9.jpg">
+              <img alt="Underground Ladder - SAN DIEGO" src="https://i.imgur.com/IgnEAt9.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/dbBDmSe.jpg">
+              <img alt="Tile Corner - LOS ANGELES" src="https://i.imgur.com/dbBDmSe.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/a0rdJro.jpg">
+              <img alt="Under Light - OAKLAND" src="https://i.imgur.com/a0rdJro.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/IyZw1ij.jpg">
+              <img alt="Urban Back - SAN DIEGO" src="https://i.imgur.com/IyZw1ij.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/TpYqjfN.jpg">
+              <img alt="Cobblestone - SACRAMENTO" src="https://i.imgur.com/TpYqjfN.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/oT7vjAo.jpg">
+              <img alt="Palm Trees - LONG BEACH" src="https://i.imgur.com/oT7vjAo.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/smNG8ad.jpg">
+              <img alt="Balboa Door - SAN DIEGO" src="https://i.imgur.com/smNG8ad.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/hmrijge.jpg">
+              <img alt="Thomas Ave Alley" src="https://i.imgur.com/hmrijge.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/pz0ypod.jpg">
+              <img alt="Grand Opening - SAN DIEGO" src="https://i.imgur.com/pz0ypod.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/WPeiRUX.jpg">
+              <img alt="Car Rental Plaza - SAN DIEGO" src="https://i.imgur.com/WPeiRUX.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/Rcv9gSo.jpg">
+              <img alt="Auburn Hills - SIOUX FALLS" src="https://i.imgur.com/Rcv9gSo.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/cLFclCz.jpg">
+              <img alt="Lower La Jolla - SAN DIEGO" src="https://i.imgur.com/cLFclCz.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/b6yrFgA.jpg">
+              <img alt="Rest Stop - OCEANSIDE" src="https://i.imgur.com/b6yrFgA.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/A2IuoL5.jpg">
+              <img alt="BMWs Inside - SAN DIEGO" src="https://i.imgur.com/A2IuoL5.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/lxPFtsF.jpg">
+              <img alt="North Park Alley - SAN DIEGO" src="https://i.imgur.com/lxPFtsF.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/dHtf48x.jpg">
+              <img alt="Thomas Peak Alley - SAN DIEGO" src="https://i.imgur.com/dHtf48x.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/F18VBer.jpg">
+              <img alt="'Beach' - SAN DIEGO" src="https://i.imgur.com/F18VBer.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/NgSzNG2.jpg">
+              <img alt="Palm Tree - SANTA BARBARA" src="https://i.imgur.com/NgSzNG2.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/XD4LXXp.jpg">
+              <img alt="Open Sign - SAN DIEGO" src="https://i.imgur.com/XD4LXXp.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/FzXJRCA.jpg">
+              <img alt="Birdrock Arch - SAN DIEGO" src="https://i.imgur.com/FzXJRCA.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/agGopHM.jpg">
+              <img alt="Grand Alley - SAN DIEGO" src="https://i.imgur.com/agGopHM.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/qJrmHLN.jpg">
+              <img alt="Winery Floor - NAPA" src="https://i.imgur.com/qJrmHLN.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/tAzU4IP.jpg">
+              <img alt="Temecula Sunset - TEMECULA" src="https://i.imgur.com/tAzU4IP.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/Wt4ZCwQ.jpg">
+              <img alt="Birdrock Road - SAN DIEGO" src="https://i.imgur.com/Wt4ZCwQ.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/AqWi9Or.jpg">
+              <img alt="LJ Floor - SAN DIEGO" src="https://i.imgur.com/AqWi9Or.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/f4eEI5K.jpg">
+              <img alt="Grand Intersection - SAN DIEGO" src="https://i.imgur.com/f4eEI5K.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/s2O2h5p.jpg">
+              <img alt="Art - DAVIS" src="https://i.imgur.com/s2O2h5p.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/bgyC9Ia.jpg">
+              <img alt="Champange Fridge - SAN DIEGO" src="https://i.imgur.com/bgyC9Ia.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/XI76voc.jpg">
+              <img alt="Birdrock Building - SAN DIEGO" src="https://i.imgur.com/XI76voc.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/7JD8TWj.jpg">
+              <img alt="Alpina - SAN DIEGO" src="https://i.imgur.com/7JD8TWj.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/IslnmtK.jpg">
+              <img alt="Birdrock Camera - SAN DIEGO" src="https://i.imgur.com/IslnmtK.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/TcsAegK.jpg">
+              <img alt="North PB Road - SAN DIEGO" src="https://i.imgur.com/TcsAegK.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/qHDXnyk.jpg">
+              <img alt="LJ Glasses - SAN DIEGO" src="https://i.imgur.com/qHDXnyk.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/Pb7lO11.jpg">
+              <img alt="BMWs Outside - SAN DIEGO" src="https://i.imgur.com/Pb7lO11.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/TNvcQef.jpg">
+              <img alt="Power Lines - DANA POINT" src="https://i.imgur.com/TNvcQef.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/sJXMNhP.jpg">
+              <img alt="LJ Floor - SAN DIEGO" src="https://i.imgur.com/sJXMNhP.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/TPDss72.jpg">
+              <img alt="PB Fog - SAN DIEGO" src="https://i.imgur.com/TPDss72.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/BIYxsNz.jpg">
+              <img alt="PB Rails - SAN DIEGO" src="https://i.imgur.com/BIYxsNz.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/qReBWAH.jpg">
+              <img alt="Ocean Blvd Intersection - SAN DIEGO" src="https://i.imgur.com/qReBWAH.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/3mpUecX.jpg">
+              <img alt="Mission Bay Bike Path - SAN DIEGO" src="https://i.imgur.com/3mpUecX.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/wfu7ylY.jpg">
+              <img alt="Crown Point House - SAN DIEGO" src="https://i.imgur.com/wfu7ylY.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/VfciwXB.jpg">
+              <img alt="LJ Doors - SAN DIEGO" src="https://i.imgur.com/VfciwXB.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/tOPE0XL.jpg">
+              <img alt="Ocean - JENNER" src="https://i.imgur.com/tOPE0XL.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/29ibZwN.jpg">
+              <img alt="Loafers - CHULA VISTA" src="https://i.imgur.com/29ibZwN.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/M1Jbob0.jpg">
+              <img alt="Alley Sumo - SAN DIEGO" src="https://i.imgur.com/M1Jbob0.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/EJkMrDE.jpg">
+              <img alt="LJ Skylight - SAN DIEGO" src="https://i.imgur.com/EJkMrDE.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/IergT9m.jpg">
+              <img alt="North Rim - GRAND CANYON" src="https://i.imgur.com/IergT9m.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/3RuYh1R.jpg">
+              <img alt="Table Top Mountain - SEDONA" src="https://i.imgur.com/3RuYh1R.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/g89zxAw.jpg">
+              <img alt="Chapel of the Holy Cross - SEDONA" src="https://i.imgur.com/g89zxAw.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/f5FiRYh.jpg">
+              <img alt="Merlot - NAPA" src="https://i.imgur.com/f5FiRYh.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/KbleRg4.jpg">
+              <img alt="Power Lines - SAN DIEGO" src="https://i.imgur.com/KbleRg4.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/CYe6dkc.jpg">
+              <img alt="LJ Barrel Wall - " src="https://i.imgur.com/CYe6dkc.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/uqvvD7f.jpg">
+              <img alt="Supreme Court - WASHINGTON DC" src="https://i.imgur.com/uqvvD7f.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/RIPelcS.jpg">
+              <img alt="Square Building - WASHINGTON DC" src="https://i.imgur.com/RIPelcS.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/mFBv630.jpg">
+              <img alt="Washington Monument - WASHINGTON DC " src="https://i.imgur.com/mFBv630.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/tGihkEM.jpg">
+              <img alt="White House - WASHINGTON DC" src="https://i.imgur.com/tGihkEM.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/etPekGB.jpg">
+              <img alt="Art - WASHINGTON DC" src="https://i.imgur.com/etPekGB.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/35nSq1g.jpg">
+              <img alt="Clouds - ATLANTA" src="https://i.imgur.com/35nSq1g.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/b1ZTzgN.jpg">
+              <img alt="La Jolla Cove - SAN DIEGO" src="https://i.imgur.com/b1ZTzgN.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/gvDPXb7.jpg">
+              <img alt="Palm Tree Shadow - SAN DIEGO" src="https://i.imgur.com/gvDPXb7.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/I0vihe1.jpg">
+              <img alt="Skyline - SAN DIEGO" src="https://i.imgur.com/I0vihe1.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/SxuXUjf.jpg">
+              <img alt="Cruisin - SAN DIEGO " src="https://i.imgur.com/SxuXUjf.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/Teq87y8.jpg">
+              <img alt="Botanical Garden - DENVER" src="https://i.imgur.com/Teq87y8.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/yvQmJxR.jpg">
+              <img alt="Balboa Garden - SAN DIEGO" src="https://i.imgur.com/yvQmJxR.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/fwwAKcg.jpg">
+              <img alt="Alley Light - SAN DIEGO " src="https://i.imgur.com/fwwAKcg.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/6q9ka1A.jpg">
+              <img alt="Sunset Power Lines - SAN DIEGO" src="https://i.imgur.com/6q9ka1A.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/Jw4oiTF.jpg">
+              <img alt="Dry Clean Steam - SAN DIEGO" src="https://i.imgur.com/Jw4oiTF.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/Iom3tNx.jpg">
+              <img alt="Rocks - POINT REYES" src="https://i.imgur.com/Iom3tNx.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/8rS0uuP.jpg">
+              <img alt="Clouds - CHICAGO" src="https://i.imgur.com/8rS0uuP.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/PS3lLul.jpg">
+              <img alt="Hotel Floor - SAN FRANCISCO" src="https://i.imgur.com/PS3lLul.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/5mc7tWG.jpg">
+              <img alt="Skyline - SAN FRANCISCO" src="https://i.imgur.com/5mc7tWG.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/4wt7Wvr.jpg">
+              <img alt="Meteor Crater - FLAGSTAFF" src="https://i.imgur.com/4wt7Wvr.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/u5PcBtT.jpg">
+              <img alt="Ocean Beach - SAN DIEGO" src="https://i.imgur.com/u5PcBtT.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/SU4Ue3J.jpg">
+              <img alt="The Bay - OAKLAND" src="https://i.imgur.com/SU4Ue3J.jpg">
+            </a></div>
+          <div><a href="https://i.imgur.com/DfeGzR3.jpg">
+              <img alt="Ocean - DANA POINT" src="https://i.imgur.com/DfeGzR3.jpg">
+            </a></div>
+        </ul>
+      </div>
+
+
+      <div id="contact">
         <!-- Form for email -->
         <h2>CONTACT</h2>
-        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+        <div class="box">
+          <form action="mailto:someone@example.com" method="post" enctype="text/plain">
             Name:<br>
             <input type="text" name="name"><br>
             E-mail:<br>
@@ -121,70 +372,37 @@
             Message:<br>
             <input type="text" name="message" size="50"><br><br>
             <input type="submit" value="Send">
-            </form>
-
-        <!-- Linkedin preview -->
-          </div>
-
-        <div class="box" id="friends">
-          <h2>FRIENDS</h2>
-          <div class="row">
-              <div class="linkcol">
-                <img src="https://i1.sndcdn.com/avatars-000481940100-uje1sc-t500x500.jpg" alt="Art History Babes" style="width:100%">
-              </div>
-              <div class="linkcol">
-                <img src="https://brewerydb-images.s3.amazonaws.com/brewery/FJBHl5/upload_kunvts-squareMedium.png" alt="Ferson Brewing" style="width:100%">
-              </div>
-              <div class="linkcol">
-                  <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple62/v4/fc/93/c1/fc93c11f-a4cd-ff48-edea-2420c857968d/source/256x256bb.jpg" alt="Museum of Contemporary Art Denver" style="width:100%">
-                </div>
-            </div>
-            <div class="row">
-                <div class="linkcol">
-                    <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/78/46/9b/78469b50-b7c2-fbdb-f5b6-6072fb26d291/source/256x256bb.jpg" alt="Jessup Cellars" style="width:100%">
-                  </div>
-                <div class="linkcol">
-                  <img src="https://d3g9pb5nvr3u7.cloudfront.net/sites/5550e53a9163ad960f850586/-725893386/256.jpg" alt="NPR" style="width:100%">
-                </div>
-                <div class="linkcol">
-                    <img src="https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1445179029/v9gnzmrn3z15horaib49.jpg" alt="National Parks Services" style="width:100%">
-                  </div>
-              </div>
-              <div class="linkcol">
-                  <img src="https://i1.sndcdn.com/avatars-000481940100-uje1sc-t500x500.jpg" alt="Art History Babes" style="width:100%">
-                </div>
-                <div class="linkcol">
-                  <img src="https://i.imgur.com/fpwkRdX.jpg" alt="University of Denver" style="width:100%">
-                </div>
-                <div class="linkcol">
-                    <img src="https://i.imgur.com/JbFh1ol.png" alt="Jazz 88 San Diego" style="width:100%">
-                  </div>
-              
+          </form>
         </div>
-        <!-- Icon links NPR, Art History Babes, Jessup Cellars, Soundcloud etc -->
+      </div>
+
+      <div id="footer">
+        <h4 id=>COPYRIGHT TWO THOUSAND NINETEEN</h4>
+      </div>
 
     </div>
 
+
     <div class="right show" id="nav">
-            <!-- Expand on click anywhere in body div -->
-            <!-- Link each nav item to section in main div -->
-            <!-- Auto scroll nav -->
-            <!-- Active status on nav links -->
-            <ul style="list-style-type:none;">
-            <li><a href="#updates" class="scroll-button" role="button">UPDATES</a></li>
-            <li><a href="#about" class="scroll-button" role="button">ABOUT</a></li>
-            <li><a href="#portfolio" class="scroll-button" role="button">PORTFOLIO</a></li>
-            <li><a href="#contact" class="scroll-button" role="button">CONTACT</a></li>
-            <li><a href="#friends" class="scroll-button" role="button">FRIENDS</a></li>
-            </ul>
-        </div>
+      <!-- Expand on click anywhere in body div -->
+      <!-- Link each nav item to section in main div -->
+      <!-- Auto scroll nav -->
+      <!-- Active status on nav links -->
+      <ul style="list-style-type:none;">
+        <li><a href="#updates" class="scroll-button" role="button">UPDATES</a></li>
+        <li><a href="#about" class="scroll-button" role="button">ABOUT</a></li>
+        <li><a href="#portfolio" class="scroll-button" role="button">PORTFOLIO</a></li>
+        <li><a href="#contact" class="scroll-button" role="button">CONTACT</a></li>
+        <li><a href="#friends" class="scroll-button" role="button">FRIENDS</a></li>
+      </ul>
+    </div>
 
 
 
     <div id="photoFact"></div>
-        <!-- On click - display summary location and date of photo loaded-->
+    <!-- On click - display summary location and date of photo loaded-->
 
-<!-- 
+    <!-- 
         SLOAN'S LAKE - DENVER COLORADO - FEBRUARY 2019 
 
         FALLS PARK - SIOUX FALLS SOUTH DAKOTA - APRIL 2019
@@ -193,18 +411,12 @@
      -->
 
 
+  </div>
 
-    <div id="quickContact"></div>
-        <!-- Icon links to linked in and email -->
-    
-    </div>
-
-    <!-- <footer>
-        Copyright 2019     
-    </footer> -->
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
